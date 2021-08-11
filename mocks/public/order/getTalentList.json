@@ -1,0 +1,92 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "list": [
+      {
+        "talent_id": "9882133111",
+        "talent_name": "学霸元宝吗",
+        "avatar": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+        "status": "1",
+        "views": 20000,
+        "interactions": 2811,
+        "put_at": "2020-12-10",
+        "put_at_actually": "2020-12-12"
+      },
+      {
+        "talent_id": "9882133112",
+        "talent_name": "学霸元宝吗",
+        "avatar": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+        "status": "2",
+        "views": 20000,
+        "interactions": 2811,
+        "put_at": "2020-12-11",
+        "put_at_actually": ""
+      },
+      {
+        "talent_id": "9882133113",
+        "talent_name": "学霸元宝吗",
+        "avatar": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+        "status": "3",
+        "views": 20000,
+        "interactions": 2811,
+        "put_at": "2020-12-12",
+        "put_at_actually": "2020-12-13"
+      },
+      {
+        "talent_id": "9882133114",
+        "talent_name": "学霸元宝吗",
+        "avatar": "",
+        "status": "4",
+        "views": 20000,
+        "interactions": 2811,
+        "put_at": "2020-12-13",
+        "put_at_actually": "2020-12-14"
+      },
+      {
+        "talent_id": "9882133115",
+        "talent_name": "学霸元宝吗",
+        "avatar": "",
+        "status": "4",
+        "views": 20000,
+        "interactions": 2811,
+        "put_at": "2020-12-14",
+        "put_at_actually": "2020-12-15"
+      },
+      {
+        "talent_id": "9882133116",
+        "talent_name": "学霸元宝吗",
+        "avatar": "",
+        "status": "4",
+        "views": 20000,
+        "interactions": 2811,
+        "put_at": "2020-12-15",
+        "put_at_actually": "2020-12-16"
+      },
+      {
+        "talent_id": "9882133117",
+        "talent_name": "学霸元宝吗",
+        "avatar": "",
+        "status": "4",
+        "views": 20000,
+        "interactions": 2811,
+        "put_at": "2020-12-11",
+        "put_at_actually": "2020-12-12"
+      },
+      {
+        "talent_id": "9882133118",
+        "talent_name": "学霸元宝吗",
+        "avatar": "",
+        "status": "4",
+        "views": 20000,
+        "interactions": 2811,
+        "put_at": "2020-12-11",
+        "put_at_actually": "2020-12-12"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "pageSize": 10
+    }
+  }
+}

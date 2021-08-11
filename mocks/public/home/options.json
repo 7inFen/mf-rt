@@ -1,0 +1,30 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "datasource": [
+      {
+        "key": "1",
+        "name": "数据源1"
+      },
+      {
+        "key": "2",
+        "name": "数据源2"
+      },
+      {
+        "key": "3",
+        "name": "数据源3"
+      }
+    ],
+    "behavior": [
+      {
+        "key": "1",
+        "name": "行为1"
+      },
+      {
+        "key": "2",
+        "name": "行为2"
+      }
+    ]
+  }
+}

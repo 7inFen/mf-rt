@@ -1,0 +1,36 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "rebateIncome": [{
+      "name": "抖音",
+      "count": 308000
+    },{
+      "name": "微信",
+      "count": 102000
+    },{
+      "name": "小红书",
+      "count": 217325
+    }],
+    "customerQuote": [{
+      "name": "抖音",
+      "count": 308000
+    },{
+      "name": "微信",
+      "count": 102000
+    },{
+      "name": "小红书",
+      "count": 217325
+    }],
+    "profitRate": [{
+      "name": "抖音",
+      "count": 42
+    },{
+      "name": "小红书",
+      "count": 34
+    },{
+      "name": "微信",
+      "count": 18
+    }]
+  }
+}

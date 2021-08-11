@@ -1,0 +1,237 @@
+{
+  "id": {
+    "type": "string",
+    "description": "行id",
+    "mock": {
+      "mock": "@integer(1, 100000)"
+    }
+  },
+  "talent_id": {
+    "type": "string",
+    "description": "达人id",
+    "mock": {
+      "mock": "@word(24)"
+    }
+  },
+  "talent_name": {
+    "type": "string",
+    "mock": {
+      "mock": "@cname"
+    },
+    "description": "达人昵称"
+  },
+  "talent_avatar": {
+    "type": "string",
+    "mock": {
+      "mock": "@image(100x100)"
+    },
+    "description": "达人头像"
+  },
+  "talent_link": {
+    "type": "string",
+    "mock": {
+      "mock": "@url('http')"
+    },
+    "description": "达人链接"
+  },
+  "form": {
+    "type": "string",
+    "mock": {
+      "mock": "@pick('原创视频60s', '图文笔记')"
+    },
+    "description": "发布形式"
+  },
+  "category": {
+    "type": "string",
+    "mock": {
+      "mock": "@pick('育儿科普', '')"
+    },
+    "description": "星图内容类型"
+  },
+  "tags": {
+    "type": "string",
+    "mock": {
+      "mock": "@pick('母婴亲子', '')"
+    },
+    "description": "达人标签"
+  },
+  "level": {
+    "type": "string",
+    "mock": {
+      "mock": "@pick('头部', '肩部', '腰部')"
+    },
+    "description": "级别"
+  },
+  "followers": {
+    "type": "number",
+    "mock": {
+      "mock": "@integer(0, 1000000)"
+    },
+    "description": "粉丝量"
+  },
+  "followers_update_at": {
+    "type": "string",
+    "mock": {
+      "mock": "@date('yyyy-MM-dd')"
+    },
+    "description": "粉丝量更新日期"
+  },
+  "views": {
+    "type": "number",
+    "mock": {
+      "mock": "@integer(0, 100000)"
+    },
+    "description": "预估播放量"
+  },
+  "interaction_rate": {
+    "type": "number",
+    "description": "预估互动率",
+    "mock": {
+      "mock": "@float(0, 100, 0, 2)"
+    }
+  },
+  "coo_counts": {
+    "type": "number",
+    "mock": {
+      "mock": "@integer(0, 20)"
+    },
+    "description": "合作次数"
+  },
+  "media_price_update_at": {
+    "type": "string",
+    "description": "星图报价更新日期",
+    "mock": {
+      "mock": "@date('yyyy-MM-dd')"
+    }
+  },
+  "media_price": {
+    "type": "number",
+    "description": "星图报价",
+    "mock": {
+      "mock": "@float(0, 10000, 0, 2)"
+    }
+  },
+  "media_price_modified_at": {
+    "type": "string",
+    "description": "星图报价修改日期",
+    "mock": {
+      "mock": "@date('yyyy-MM-dd')"
+    }
+  },
+  "agency_price_type": {
+    "type": "string",
+    "mock": {
+      "mock": "@pick('1', '2', '3')"
+    },
+    "description": "机构报价类型：1， 手动输入；2， 平台同步；3，锁价"
+  },
+  "agency_price_modified_at": {
+    "type": "string",
+    "description": "机构报价修改日期",
+    "mock": {
+      "mock": "@date('yyyy-MM-dd')"
+    }
+  },
+  "agency_price": {
+    "type": "number",
+    "description": "机构报价",
+    "mock": {
+      "mock": "@float(0, 10000, 0, 2)"
+    }
+  },
+  "agency_price_expired_at": {
+    "type": "string",
+    "description": "机构报价过期日期",
+    "mock": {
+      "mock": "@date('yyyy-MM-dd')"
+    }
+  },
+  "agency": {
+    "type": "string",
+    "description": "kol机构",
+    "mock": {
+      "mock": "@ctitle"
+    }
+  },
+  "agency_rebate": {
+    "type": "number",
+    "description": "机构返点",
+    "mock": {
+      "mock": "@float(0, 100, 0, 2)"
+    }
+  },
+  "link_price": {
+    "type": "number",
+    "description": "链接费用",
+    "mock": {
+      "mock": "@float(0, 100000, 0, 2)"
+    }
+  },
+  "auth_price": {
+    "type": "number",
+    "description": "授权费用",
+    "mock": {
+      "mock": "@float(0, 100000, 0, 2)"
+    }
+  },
+  "commission_rate": {
+    "type": "number",
+    "description": "佣金比例",
+    "mock": {
+      "mock": "@float(0, 100, 0, 2)"
+    }
+  },
+  "quote_price": {
+    "type": "number",
+    "description": "对客报价",
+    "mock": {
+      "mock": "@float(0, 100000, 0, 2)"
+    }
+  },
+  "quote_price_type": {
+    "type": "string",
+    "description": "对客报价类型：1，框内；2，框外",
+    "mock": {
+      "mock": "@pick('1', '2')"
+    }
+  },
+  "quote_price_modified_at": {
+    "type": "string",
+    "description": "对客报价修改日期",
+    "mock": {
+      "mock": "@date('yyyy-MM-dd')"
+    }
+  },
+  "quote_price_effective_at": {
+    "type": "string",
+    "description": "对客报价生效日期",
+    "mock": {
+      "mock": "@date('yyyy-MM-dd')"
+    }
+  },
+  "quote_price_expired_at": {
+    "type": "string",
+    "description": "对客报价失效日期",
+    "mock": {
+      "mock": "@date('yyyy-MM-dd')"
+    }
+  },
+  "last_modified_at": {
+    "type": "string",
+    "description": "最后修改日期",
+    "mock": {
+      "mock": "@date('yyyy-MM-dd')"
+    }
+  },
+  "last_modified_by": {
+    "type": "string",
+    "description": "最后修改用户",
+    "mock": {
+      "mock": "@cname"
+    }
+  },
+  "delete": {
+    "type": "boolean",
+    "description": "是否可被删除"
+  }
+}

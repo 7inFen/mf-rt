@@ -1,0 +1,54 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "brand": "皇家美素佳儿",
+    "campaignName": "金装美素佳儿3月Campaign",
+    "quoteCompany": "上海智声广告有限公司",
+    "contact": {
+      "name": "Steve Ray",
+      "mobile": "12333333333",
+      "email": "123@qq.com"
+    },
+    "list": [{
+      "agent": "XX公司",
+      "platform": "抖音",
+      "nickname": "沈佳宜",
+      "link": "212332333",
+      "recommendReason": "推荐理由",
+      "postType": "原创视频60s",
+      "period": "6.12之前",
+      "mainTag": "母婴",
+      "fans": 1233233,
+      "expectedShowCount": 30323489,
+      "expectedPlayCount": 12233332,
+      "expectedInteractCount": 323443,
+      "readCost": 0.19,
+      "buyWay": "星图",
+      "cost": 20000,
+      "note": "备注"
+    },{
+      "agent": "XX公司",
+      "platform": "抖音",
+      "nickname": "沈佳宜",
+      "link": "212332333",
+      "recommendReason": "推荐理由",
+      "postType": "原创视频60s",
+      "period": "6.12之前",
+      "mainTag": "母婴",
+      "fans": 1233233,
+      "expectedShowCount": 30323489,
+      "expectedPlayCount": 12233332,
+      "expectedInteractCount": 323443,
+      "readCost": 0.19,
+      "buyWay": "星图",
+      "cost": 20000,
+      "note": "备注"
+    }],
+    "pagination": {
+      "current": 1,
+      "pageSize": 10,
+      "total": 2
+    }
+  }
+}

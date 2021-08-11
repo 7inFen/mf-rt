@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "license": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    "evidence_type": "2",
+    "agent_file": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    "id_card_front": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    "id_card_back": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    "created_at": "2019-12-11 16:25:11",
+    "audited_at": "2020-01-02 10:18:45"
+  }
+}

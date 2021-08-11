@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  jsui:
+    container_name: cms-jsui
+    hostname: cms-jsui
+    image: 'bitnami/nginx:1.16'
+    ports:
+      - '80:8080'
+    volumes:
+      - /home/www/mgcc/jsui:/app

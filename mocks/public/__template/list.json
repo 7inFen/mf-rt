@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "list": [
+      {
+        "id": "1"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "pageSize": 30,
+      "total": 99
+    }
+  }
+}

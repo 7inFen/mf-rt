@@ -1,0 +1,27 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": [
+    {
+      "id": "1",
+      "name": "美素佳儿",
+      "category": "食品饮料类-普通食品",
+      "cover": "https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png",
+      "status": 2
+    },
+    {
+      "id": "2",
+      "name": "美素佳儿",
+      "category": "食品饮料类-普通食品",
+      "cover": "https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png",
+      "status": 3
+    },
+    {
+      "id": "3",
+      "name": "美素佳儿",
+      "category": "食品饮料类-普通食品",
+      "cover": "https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png",
+      "status": 4
+    }
+  ]
+}

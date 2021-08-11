@@ -1,0 +1,70 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": [
+    {
+      "platform_name": "抖音",
+      "talent_list": [
+        {
+          "id": "871584215",
+          "name": "冬泳怪鸽",
+          "avatar": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3765418493,620229500&fm=26&gp=0.jpg",
+          "fans": 207,
+          "rate": "腰部",
+          "postType": "原创视频60s",
+          "platformCost": 45000,
+          "talentCost": 45000,
+          "rebateIncome": 13500,
+          "linkCost": 100,
+          "authorizeCost": 0,
+          "commissionRatio": 10,
+          "netCost": 31500,
+          "platformServiceCost": 2250,
+          "mediaCost": 1575,
+          "customerQuote": 47250,
+          "frame": 0,
+          "profitRate": 42,
+          "serviceCost": 3307,
+          "valueAddedTax": 1000
+        }
+      ]
+    },
+    {
+      "platform_name": "小红书",
+      "talent_list": []
+    },
+    {
+      "platform_name": "微博",
+      "talent_list": [
+        {
+          "id": "327139137",
+          "name": "冬泳怪鸽",
+          "avatar": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3765418493,620229500&fm=26&gp=0.jpg",
+          "fans": 207,
+          "rate": "腰部",
+          "postType": "原创视频60s",
+          "platformCost": 45000,
+          "talentCost": 45000,
+          "rebateIncome": 13500,
+          "linkCost": 100,
+          "authorizeCost": 0,
+          "commissionRatio": 10,
+          "netCost": 31500,
+          "platformServiceCost": 2250,
+          "mediaCost": 1575,
+          "customerQuote": 47250,
+          "frame": 0,
+          "profitRate": 42,
+          "serviceCost": 3307,
+          "valueAddedTax": 1000,
+          "deductedPrice": 100,
+          "discountRate": 100
+        }
+      ]
+    },
+    {
+      "platform_name": "微信",
+      "talent_list": []
+    }
+  ]
+}

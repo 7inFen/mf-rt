@@ -1,0 +1,71 @@
+{
+  "status": "success",
+  "data": {
+    "id": "guidguidguidguid",
+    "name": "项目名称项目名称项目名称项目名称项目名称项目名称项目名称",
+    "unStarted": 5,
+    "processing": 8,
+    "finished": 12,
+    "delay": 2,
+    "list": [
+      {
+        "platformName": "抖音",
+        "talentName": "达人昵称",
+        "agencyName": "代理机构名称",
+        "templateName": "原创视频60s",
+        "deadline": "2020-02-18",
+        "steps": [
+          {
+            "name": "方向撰写与提供",
+            "spend": 3,
+            "responsible": "代理",
+            "finishedAt": "2020-02-03",
+            "delayReason": "客户因素:未及时反馈"
+          },
+          {
+            "name": "方向修改与确认",
+            "spend": 2,
+            "responsible": "客户",
+            "finishedAt": "2020-02-05",
+            "delayReason": ""
+          },
+          {
+            "name": "脚本创作与提交",
+            "spend": 2,
+            "responsible": "客户",
+            "finishedAt": "2020-02-10",
+            "delayReason": ""
+          },
+          {
+            "name": "脚本创作与确认",
+            "spend": 3,
+            "responsible": "客户",
+            "finishedAt": "2020-02-14",
+            "delayReason": ""
+          },
+          {
+            "name": "视频拍摄与提交",
+            "spend": 2,
+            "responsible": "客户",
+            "finishedAt": "2020-02-15",
+            "delayReason": ""
+          },
+          {
+            "name": "视频修改与调整",
+            "spend": 3,
+            "responsible": "客户",
+            "finishedAt": "2020-02-16",
+            "delayReason": ""
+          },
+          {
+            "name": "视频确认与上线",
+            "spend": 3,
+            "responsible": "代理",
+            "finishedAt": "2020-02-20",
+            "delayReason": "代理因素"
+          }
+        ]
+      }
+    ]
+  }
+}

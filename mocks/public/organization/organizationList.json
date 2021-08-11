@@ -1,0 +1,83 @@
+{
+  "code": 200,
+  "status": "success",
+  "msg": "",
+  "data": [
+    {
+      "name": "业务中心",
+      "roleName": "执行人",
+      "id": "1",
+      "tid": "0",
+      "children": [
+        { "name": "母婴组", "id": "2", "tid": "1", "children": [] },
+        { "name": "电商组", "id": "3", "tid": "1", "children": [] },
+        { "name": "其他组", "id": "4", "tid": "1", "children": [] },
+        {
+          "name": "客户执行组",
+          "id": "5",
+          "tid": "1",
+          "children": [
+            { "name": "一组", "id": "6", "tid": "5", "children": [] },
+            { "name": "二组", "id": "7", "tid": "5", "children": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "策划创意中心",
+      "roleName": "策划",
+      "id": "8",
+      "tid": "0",
+      "children": [
+        { "name": "媒介策划组", "id": "9", "tid": "8", "children": [] },
+        { "name": "全案策划组", "id": "10", "tid": "8", "children": [] },
+        { "name": "设计组", "id": "11", "tid": "8", "children": [] }
+      ]
+    },
+    {
+      "name": "媒介中心",
+      "roleName": "媒介",
+      "id": "12",
+      "tid": "0",
+      "children": [
+        { "name": "社媒部", "id": "13", "tid": "12", "children": [] },
+        { "name": "数媒部", "id": "14", "tid": "12", "children": [] }
+      ]
+    },
+    {
+      "name": "财务人事中心",
+      "roleName": "财务",
+      "id": "15",
+      "tid": "0",
+      "children": [
+        { "name": "人事部", "id": "16", "tid": "15", "children": [] },
+        { "name": "财务部", "id": "17", "tid": "15", "children": [] }
+      ]
+    },
+    {
+      "name": "产研中心",
+      "roleName": "研发支持",
+      "id": "19",
+      "tid": "0",
+      "children": [
+        { "name": "产品组", "id": "20", "tid": "19", "children": [] },
+        { "name": "研发组", "id": "21", "tid": "19", "children": [] },
+        { "name": "数据组", "id": "26", "tid": "19", "children": [] },
+        { "name": "电商运营组", "id": "27", "tid": "19", "children": [] }
+      ]
+    },
+    {
+      "name": "测试一级部门",
+      "id": "28",
+      "tid": "0",
+      "children": [
+        {
+          "name": "测试二级部门",
+          "id": "29",
+          "tid": "28",
+          "children": [{ "name": "测试三级部门", "id": "30", "tid": "29" }]
+        }
+      ]
+    }
+  ]
+}

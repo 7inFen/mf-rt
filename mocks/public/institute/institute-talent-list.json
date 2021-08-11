@@ -1,0 +1,51 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "list": [{
+      "id": "1",
+      "name": "吃不胖的娘",
+      "avatar": "",
+      "tags": ["颜值达人","剧情搞笑"],
+      "platform": {
+        "name": "抖音",
+        "logo": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592804517314&di=a17df7611cc8760d69133cfd99fa0376&imgtype=0&src=http%3A%2F%2F2.pic.9ht.com%2Fup%2F2018-3%2F2018327171244.jpg"
+      },
+      "fans": 1295,
+      "isCooperate": true,
+      "launchCount": 27,
+      "rebate": 23.5
+    },{
+      "id": "2",
+      "name": "惊天魔幻龙",
+      "avatar": "",
+      "tags": ["剧情搞笑"],
+      "platform": {
+        "name": "抖音",
+        "logo": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592804517314&di=a17df7611cc8760d69133cfd99fa0376&imgtype=0&src=http%3A%2F%2F2.pic.9ht.com%2Fup%2F2018-3%2F2018327171244.jpg"
+      },
+      "fans": 1067,
+      "isCooperate": true,
+      "launchCount": 53,
+      "rebate": 30.5
+    },{
+      "id": "3",
+      "name": "企鹅妈妈",
+      "avatar": "https://p29-dy.byteimg.com/aweme/1080x1080/23f8e00054afff76eb7c5.jpeg?from=4010531038",
+      "tags": ["剧情搞笑"],
+      "platform": {
+        "name": "抖音",
+        "logo": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592804517314&di=a17df7611cc8760d69133cfd99fa0376&imgtype=0&src=http%3A%2F%2F2.pic.9ht.com%2Fup%2F2018-3%2F2018327171244.jpg"
+      },
+      "fans": 1345,
+      "isCooperate": false,
+      "launchCount": 0,
+      "rebate": 0
+    }],
+    "pagination": {
+      "current": 1,
+      "pageSize": 10,
+      "total": 3
+    }
+  }
+}

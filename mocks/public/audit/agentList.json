@@ -1,0 +1,70 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "list": [
+      {
+        "id": "1",
+        "company_name": "上海智声广告有限公司",
+        "phone": "15333333333",
+        "applicant_name": "李明",
+        "created_at": "2019-12-11 15:23:11"
+      },
+      {
+        "id": "2",
+        "company_name": "上海智声广告有限公司",
+        "phone": "15333333333",
+        "applicant_name": "李明",
+        "created_at": "2019-12-11 15:23:11",
+        "audited_at": "2019-12-12 16:00:10"
+      },
+      {
+        "id": "3",
+        "company_name": "上海智声广告有限公司",
+        "phone": "15333333333",
+        "applicant_name": "李明",
+        "created_at": "2019-12-11 15:23:11",
+        "audited_at": "2019-12-12 16:00:10",
+        "refuse_reason": "营业执照不清晰"
+      },
+      {
+        "id": "4",
+        "company_name": "上海智声广告有限公司",
+        "phone": "15333333333",
+        "applicant_name": "李明",
+        "created_at": "2019-12-11 15:23:11",
+        "audited_at": "2019-12-12 16:00:10",
+        "refuse_reason": "营业执照不清晰",
+        "audit_status": "1",
+        "last_modified_at": "2019-12-12 16:00:10"
+      },
+      {
+        "id": "5",
+        "company_name": "上海智声广告有限公司",
+        "phone": "15333333333",
+        "applicant_name": "李明",
+        "created_at": "2019-12-11 15:23:11",
+        "audited_at": "2019-12-12 16:00:10",
+        "refuse_reason": "营业执照不清晰",
+        "audit_status": "2",
+        "last_modified_at": "2019-12-12 16:00:10"
+      },
+      {
+        "id": "6",
+        "company_name": "上海智声广告有限公司",
+        "phone": "15333333333",
+        "applicant_name": "李明",
+        "created_at": "2019-12-11 15:23:11",
+        "audited_at": "2019-12-12 16:00:10",
+        "refuse_reason": "营业执照不清晰",
+        "audit_status": "3",
+        "last_modified_at": "2019-12-12 16:00:10"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "pageSize": 10,
+      "total": 100
+    }
+  }
+}

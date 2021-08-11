@@ -1,0 +1,9 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "name": "品牌名称",
+    "init_talent": true,
+    "_comment": "在品牌导入或页面初始化时调用。init_talent为true表示已导入过达人；品牌不属于当前用户时接口失败"
+  }
+}

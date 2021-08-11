@@ -1,0 +1,9 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "organizationList": "[{\"id\":\"_ad\",\"roleName\":\"项目负责人\"},{\"id\":\"1\",\"name\":\"业务中心\",\"roleName\":\"执行人\"},{\"id\":\"8\",\"name\":\"策划创意中心\",\"roleName\":\"策划\"},{\"id\":\"15\",\"name\":\"财务人事中心\",\"roleName\":\"财务\"}]",
+    "userList": "[{\"isLeader\":false,\"name\":\"樊子琦\",\"id\":\"5\",\"nodeId\":\"_ad\"},{\"isLeader\":true,\"name\":\"陆雅婷\",\"id\":\"60\",\"nodeId\":\"_ad\"},{\"isLeader\":false,\"name\":\"陆雅婷\",\"id\":\"60\",\"nodeId\":\"1\"},{\"isLeader\":false,\"name\":\"缪羽西\",\"id\":\"72\",\"nodeId\":\"1\"},{\"isLeader\":false,\"name\":\"杨志超\",\"id\":\"90\",\"nodeId\":\"8\"},{\"isLeader\":false,\"name\":\"李敏兮\",\"id\":\"95\",\"nodeId\":\"8\"},{\"isLeader\":false,\"name\":\"张齐\",\"id\":\"101\",\"nodeId\":\"15\"},{\"isLeader\":true,\"name\":\"陆雅婷\",\"id\":\"60\",\"nodeId\":\"1\"},{\"isLeader\":true,\"name\":\"杨志超\",\"id\":\"90\",\"nodeId\":\"8\"},{\"isLeader\":true,\"name\":\"李敏兮\",\"id\":\"95\",\"nodeId\":\"8\"},{\"isLeader\":true,\"name\":\"张齐\",\"id\":\"101\",\"nodeId\":\"15\"}]",
+    "extraData": "{\"ADList\":[{\"isLeader\":false,\"name\":\"樊子琦\",\"id\":\"5\",\"nodeId\":\"2\"}],\"AMList\":[]}"
+  }
+}

@@ -1,0 +1,1 @@
+export const FETCH_MEDIA_LIST = 'FETCH_MEDIA_LIST'

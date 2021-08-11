@@ -1,0 +1,145 @@
+{
+  "status": "success",
+  "data": {
+    "list": [
+      {
+        "id": "guid",
+        "name": "项目名称项目名称项目名称项目名称项目名称项目名称项目名称",
+        "unStarted": 5,
+        "processing": 8,
+        "finished": 12,
+        "delay": 2,
+        "diff": true,
+        "stepAll": 34,
+        "stepFinished": 12,
+        "am": "小明",
+        "productName": "产品名称",
+        "userRole": ["ad", "am", "ae"],
+        "list": [
+          {
+            "taskId": "taskId",
+            "platformName": "抖音",
+            "talentName": "达人昵称",
+            "agencyName": "代理机构名称",
+            "templateName": "原创视频60s",
+            "deadline": "2021-03-25",
+            "needConfirmDate": true,
+            "needConfirmTerminate": true,
+            "terminateAt": "",
+            "delayCounts": 5,
+            "steps": [
+              {
+                "name": "方向撰写与提供",
+                "spend": 3,
+                "responsible": "代理",
+                "finishedAt": "2021-03-02",
+                "logAt": "2021-01-01",
+                "logBy": "小明",
+                "delayReason": "客户因素:未及时反馈",
+                "delayFiles": [
+                  {
+                    "url": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+                    "uid": "2",
+                    "name": "证据文件.png"
+                  }
+                ],
+                "nodeId": "nodeId1",
+                "startAt": "2021-02-26",
+                "stopAt": "2021-03-02",
+                "presetFinished": true
+              },
+              {
+                "name": "方向修改与确认",
+                "spend": 2,
+                "responsible": "客户",
+                "finishedAt": "2021-03-05",
+                "logAt": "2021-01-01",
+                "logBy": "小明",
+                "delayReason": "",
+                "delayFiles": [],
+                "nodeId": "nodeId2",
+                "startAt": "2021-03-01",
+                "stopAt": "2021-03-04",
+                "presetFinished": true
+              },
+              {
+                "name": "脚本创作与提交",
+                "spend": 2,
+                "responsible": "客户",
+                "finishedAt": "2021-03-07",
+                "logAt": "2021-01-01",
+                "logBy": "小明",
+                "delayReason": "",
+                "delayFiles": [],
+                "nodeId": "nodeId3",
+                "startAt": "2021-03-04",
+                "stopAt": "2021-03-07",
+                "presetFinished": false
+              },
+              {
+                "name": "脚本创作与确认",
+                "spend": 3,
+                "responsible": "客户",
+                "finishedAt": "2021-03-09",
+                "logAt": "2021-01-01",
+                "logBy": "小明",
+                "delayReason": "",
+                "delayFiles": [],
+                "nodeId": "nodeId4",
+                "startAt": "2021-03-08",
+                "stopAt": "2021-03-10",
+                "presetFinished": false
+              },
+              {
+                "name": "视频拍摄与提交",
+                "spend": 2,
+                "responsible": "客户",
+                "finishedAt": "2021-03-12",
+                "logAt": "2021-01-01",
+                "logBy": "小明",
+                "delayReason": "",
+                "delayFiles": [],
+                "nodeId": "nodeId5",
+                "startAt": "2021-03-11",
+                "stopAt": "2021-03-16",
+                "presetFinished": true
+              },
+              {
+                "name": "视频修改与调整",
+                "spend": 3,
+                "responsible": "客户",
+                "finishedAt": "2021-03-16",
+                "logAt": "2021-01-01",
+                "logBy": "小明",
+                "delayReason": "",
+                "delayFiles": [],
+                "nodeId": "nodeId6",
+                "startAt": "2021-03-15",
+                "stopAt": "2021-03-20",
+                "presetFinished": true
+              },
+              {
+                "name": "视频确认与上线",
+                "spend": 3,
+                "responsible": "代理",
+                "logAt": "2021-01-01",
+                "logBy": "小明",
+                "delayReason": "",
+                "delayFiles": [],
+                "nodeId": "nodeId7",
+                "startAt": "2021-03-18",
+                "stopAt": "2021-03-22",
+                "presetFinished": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "pageSize": 10,
+      "total": 100
+    }
+  }
+}

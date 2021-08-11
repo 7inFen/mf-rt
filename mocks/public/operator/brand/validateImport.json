@@ -1,0 +1,81 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "type": "2",
+    "list": [
+      {
+        "talent_name": "抖音达人",
+        "talent_id": "抖音ID",
+        "followers": "粉丝量",
+        "tags": "达人类型",
+        "form": "发布形式",
+        "media_price": "星图报价",
+        "agency_price": "机构报价",
+        "agency": "KOL机构",
+        "agency_rebate": "机构返点",
+        "link_price": "链接费用",
+        "auth_price": "授权费用",
+        "lottery_price": "抽奖费用",
+        "commission_rate": "佣金比例",
+        "quote_price": "对客报价（去税）",
+        "quote_price_type": "框内/框外",
+        "quote_price_expired_at": "框内有效期",
+        "error_fields": ["talent_name", "talent_id"]
+      },
+      {
+        "talent_name": "小红书达人",
+        "talent_link": "网址",
+        "followers": "粉丝量",
+        "tags": "达人类型",
+        "form": "发布形式",
+        "media_price": "小红书平台报价",
+        "agency_price": "机构报价",
+        "agency": "KOL机构",
+        "agency_rebate": "机构返点",
+        "link_price": "链接费用",
+        "auth_price": "授权费用",
+        "weapp_price": "抽奖费用",
+        "commission_rate": "佣金比例",
+        "quote_price": "对客报价（去税）",
+        "quote_price_type": "框内/框外",
+        "quote_price_expired_at": "框内有效期",
+        "error_fields": ["media_price", "auth_price"]
+      },
+      {
+        "talent_name": "微博达人",
+        "talent_link": "网址",
+        "followers": "粉丝量",
+        "tags": "达人类型",
+        "form": "发布形式",
+        "agency_price": "机构报价",
+        "agency": "KOL机构",
+        "agency_discount": "机构折扣",
+        "link_price": "链接费用",
+        "auth_price": "授权费用",
+        "commission_rate": "佣金比例",
+        "quote_price": "对客报价（去税）",
+        "quote_price_type": "框内/框外",
+        "quote_price_expired_at": "框内有效期",
+        "error_fields": ["commission_rate", "quote_price_type"]
+      },
+      {
+        "talent_name": "微信达人",
+        "talent_link": "网址",
+        "followers": "粉丝量",
+        "tags": "达人类型",
+        "form": "发布形式",
+        "agency_price": "机构报价",
+        "agency": "KOL机构",
+        "agency_discount": "机构折扣",
+        "link_price": "链接费用",
+        "auth_price": "授权费用",
+        "commission_rate": "佣金比例",
+        "quote_price": "对客报价（去税）",
+        "quote_price_type": "框内/框外",
+        "quote_price_expired_at": "框内有效期",
+        "error_fields": ["link_price"]
+      }
+    ]
+  }
+}

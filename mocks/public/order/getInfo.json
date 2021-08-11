@@ -1,0 +1,30 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "order_name": "订单名称",
+    "schedule_id": "1",
+    "schedule_name": "订单1",
+    "po_id": "po单编号",
+    "po_attachment": [
+      {
+        "uid": "1",
+        "url": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+      },
+      {
+        "uid": "2",
+        "url": "http://61.174.52.49:8112/file/get?fileId=26"
+      }
+    ],
+    "talent": [
+      {
+        "platform_id": "1",
+        "value": ["97123341", "97123343"]
+      },
+      {
+        "platform_id": "3",
+        "value": ["97123342"]
+      }
+    ]
+  }
+}

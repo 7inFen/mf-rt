@@ -1,0 +1,33 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "status": 4,
+    "tip": "审核结果将通过邮箱进行发送，请及时查收",
+    "id": "1",
+    "name": "上海智声广告有限公司",
+    "businessCertificate": {
+      "uid": "111",
+      "name": "1.jpg",
+      "url": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3001987500,157788709&fm=26&gp=0.jpg"
+    },
+    "materialType": "id-card",
+    "authorization": {
+      "uid": "111",
+      "name": "1.jpg",
+      "url": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3001987500,157788709&fm=26&gp=0.jpg"
+    },
+    "idObverse": {
+      "uid": "111",
+      "name": "1.jpg",
+      "url": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3001987500,157788709&fm=26&gp=0.jpg"
+    },
+    "idReverse": {
+      "uid": "111",
+      "name": "1.jpg",
+      "url": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3001987500,157788709&fm=26&gp=0.jpg"
+    },
+    "submitTime": "2020-05-07 12:00:00",
+    "submitAccount": "12345567"
+  }
+}

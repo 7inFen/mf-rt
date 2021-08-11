@@ -1,0 +1,119 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": [
+    {
+      "platform_id": "1",
+      "platform_name": "抖音",
+      "talent_list": [
+        {
+          "talent_id": "97123341",
+          "talent_name": "学霸元宝吗",
+          "avatar": "",
+          "views": 20000,
+          "interactions": 2811,
+          "put_at": "2020-12-11",
+          "schedule_amount": 20000,
+          "order_amount": 23111
+        },
+        {
+          "talent_id": "97123342",
+          "talent_name": "学霸元宝吗",
+          "avatar": "",
+          "views": 20000,
+          "interactions": 2811,
+          "put_at": "",
+          "schedule_amount": 20000,
+          "order_amount": 23111
+        },
+        {
+          "talent_id": "97123343",
+          "talent_name": "学霸元宝吗",
+          "avatar": "",
+          "views": 20000,
+          "interactions": 2811,
+          "put_at": "2020-12-11",
+          "schedule_amount": 20000,
+          "order_amount": 23111
+        },
+        {
+          "talent_id": "97123344",
+          "talent_name": "学霸元宝吗",
+          "avatar": "",
+          "views": 20000,
+          "interactions": 2811,
+          "put_at": "2020-12-11",
+          "schedule_amount": 20000,
+          "order_amount": 23111
+        }
+      ]
+    },
+    {
+      "platform_id": "2",
+      "platform_name": "小红书",
+      "talent_list": [
+        {
+          "talent_id": "97123341",
+          "talent_name": "学霸元宝吗",
+          "avatar": "",
+          "views": 20000,
+          "interactions": 2811,
+          "put_at": "2020-12-11",
+          "schedule_amount": 20000,
+          "order_amount": 23111
+        },
+        {
+          "talent_id": "97123342",
+          "talent_name": "学霸元宝吗",
+          "avatar": "",
+          "views": 20000,
+          "interactions": 2811,
+          "put_at": "2020-12-11",
+          "schedule_amount": 20000,
+          "order_amount": 23111
+        },
+        {
+          "talent_id": "97123343",
+          "talent_name": "学霸元宝吗",
+          "avatar": "",
+          "views": 20000,
+          "interactions": 2811,
+          "put_at": "2020-12-11",
+          "schedule_amount": 20000,
+          "order_amount": 23111
+        }
+      ]
+    },
+    {
+      "platform_id": "3",
+      "platform_name": "微博",
+      "talent_list": [
+        {
+          "talent_id": "97123341",
+          "talent_name": "学霸元宝吗",
+          "avatar": "",
+          "views": 20000,
+          "interactions": 2811,
+          "put_at": "2020-12-11",
+          "schedule_amount": 20000,
+          "order_amount": 23111
+        },
+        {
+          "talent_id": "97123342",
+          "talent_name": "学霸元宝吗",
+          "avatar": "",
+          "views": 20000,
+          "interactions": 2811,
+          "put_at": "2020-12-11",
+          "schedule_amount": 20000,
+          "order_amount": 23111
+        }
+      ]
+    },
+    {
+      "platform_id": "4",
+      "platform_name": "微信",
+      "talent_list": []
+    }
+  ]
+}

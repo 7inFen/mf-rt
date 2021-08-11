@@ -1,0 +1,149 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "list": [
+      {
+        "project_id": "项目id1",
+        "project_name": "项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称",
+        "product_name": "产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称",
+        "content": "传播内容传播内容传播内容传播内容传播内容传播内容",
+        "put_range": "发布周期，默认按开始时间倒排",
+        "platforms": [
+          {
+            "platform_name": "抖音",
+            "platform_id": "1",
+            "talents": 2,
+            "published": 1,
+            "expected_views": 310000,
+            "expected_interactions": 6022,
+            "views": 310000,
+            "interactions": 6022
+          }
+        ]
+      },
+      {
+        "project_id": "项目id2",
+        "project_name": "项目名称",
+        "product_name": "产品名称",
+        "content": "传播内容",
+        "put_range": "发布周期，默认按开始时间倒排",
+        "platforms": [
+          {
+            "platform_name": "抖音",
+            "platform_id": "1",
+            "talents": 2,
+            "published": 1,
+            "expected_views": 310000,
+            "expected_interactions": 6022,
+            "views": 310000,
+            "interactions": 6022
+          },
+          {
+            "platform_name": "小红书",
+            "platform_id": "2",
+            "talents": 2,
+            "published": 1,
+            "expected_views": 310000,
+            "expected_interactions": 6022,
+            "views": 310000,
+            "interactions": 6022
+          },
+          {
+            "platform_name": "微博",
+            "platform_id": "3",
+            "talents": 2,
+            "published": 1,
+            "expected_views": 310000,
+            "expected_interactions": 6022,
+            "views": 310000,
+            "interactions": 6022
+          }
+        ]
+      },
+      {
+        "project_id": "项目id3",
+        "project_name": "项目名称",
+        "product_name": "产品名称",
+        "content": "传播内容",
+        "put_range": "发布周期，默认按开始时间倒排",
+        "platforms": [
+          {
+            "platform_name": "抖音",
+            "platform_id": "1",
+            "talents": 2,
+            "published": 1,
+            "expected_views": 310000,
+            "expected_interactions": 6022,
+            "views": 310000,
+            "interactions": 6022
+          },
+          {
+            "platform_name": "小红书",
+            "platform_id": "2",
+            "talents": 2,
+            "published": 1,
+            "expected_views": 310000,
+            "expected_interactions": 6022,
+            "views": 310000,
+            "interactions": 6022
+          },
+          {
+            "platform_name": "微博",
+            "platform_id": "3",
+            "talents": 2,
+            "published": 1,
+            "expected_views": 310000,
+            "expected_interactions": 6022,
+            "views": 310000,
+            "interactions": 6022
+          }
+        ]
+      },
+      {
+        "project_name": "以下是按达人展示列表"
+      },
+      {
+        "talent_name": "小蝌蚪找妈妈1",
+        "talent_id": "达人id1",
+        "avatar": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+        "form": "原创视频60s",
+        "published": 1,
+        "project_id": "项目id",
+        "project_name": "项目名称",
+        "product_name": "产品名称",
+        "content": "传播内容",
+        "put_at": "发布时间",
+        "expected_views": 310000,
+        "expected_interactions": 6022,
+        "views": 310000,
+        "interactions": 6022,
+        "type": "购物车",
+        "clicks": 87222
+      },
+      {
+        "talent_name": "小蝌蚪找妈妈2",
+        "talent_id": "达人id2",
+        "avatar": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+        "form": "原创视频60s",
+        "published": 4,
+        "project_id": "项目id",
+        "project_name": "项目名称",
+        "product_name": "产品名称",
+        "content": "传播内容",
+        "put_at": "发布时间",
+        "expected_views": 310000,
+        "expected_interactions": 6022,
+        "views": 310000,
+        "interactions": 6022,
+        "type": "购物车",
+        "clicks": 79999
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "pageSize": 10,
+      "total": 110
+    }
+  }
+}

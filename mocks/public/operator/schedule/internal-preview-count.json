@@ -1,0 +1,26 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": [
+    {
+      "name": "抖音",
+      "count": 2
+    },
+    {
+      "name": "小红书",
+      "count": 3
+    },
+    {
+      "name": "微博",
+      "count": 0
+    },
+    {
+      "name": "微信",
+      "count": 0
+    },
+    {
+      "name": "B站",
+      "count": 10
+    }
+  ]
+}

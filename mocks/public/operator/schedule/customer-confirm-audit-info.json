@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "id": "1",
+    "submitTime": "2020-05-08 12:12:12",
+    "submitAccount": "13411111111",
+    "submitName": "steve",
+    "confirmDate": "2020-05-09",
+    "confirmPicture":{
+      "uid": "111222",
+      "name": "2.jpg",
+      "url": "http://img3.imgtn.bdimg.com/it/u=1007943105,2687032596&fm=26&gp=0.jpg"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": [{
+    "role": "AM(负责人)",
+    "roleId": "1",
+    "members": [{
+      "id": "32",
+      "name": "缪羽西",
+      "fixed": true
+    }]
+  },{
+    "role": "AD",
+    "roleId": "2",
+    "members": []
+  },{
+    "role": "AE",
+    "roleId": "3",
+    "members": []
+  },{
+    "role": "CD",
+    "roleId": "4",
+    "members": []
+  },{
+    "role": "copy/art",
+    "roleId": "5",
+    "members": []
+  },{
+    "role": "PD",
+    "roleId": "6",
+    "members": []
+  },{
+    "role": "planner",
+    "roleId": "7",
+    "members": []
+  },{
+    "role": "MD",
+    "roleId": "8",
+    "members": []
+  },{
+    "role": "media buyer",
+    "roleId": "9",
+    "members": []
+  },{
+    "role": "FIN",
+    "roleId": "10",
+    "members": [{
+      "id": "34",
+      "name": "张齐",
+      "fixed": true
+    }]
+  },{
+    "role": "CEO",
+    "roleId": "11",
+    "members": [{
+      "id": "23",
+      "name": "尹佳君",
+      "fixed": true
+    }]
+  }]
+}

@@ -1,0 +1,45 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": [
+    {
+      "date": "2020-05-12",
+      "views": 98222,
+      "likes": 1111,
+      "comments": 231341,
+      "forwards": 23131
+    },
+    {
+      "date": "2020-05-13",
+      "views": 91222,
+      "interactions": 8322,
+      "likes": 1111,
+      "comments": 231341,
+      "forwards": 23131
+    },
+    {
+      "date": "2020-05-14",
+      "views": 81222,
+      "interactions": 7222,
+      "likes": 1111,
+      "comments": 231341,
+      "forwards": 23131
+    },
+    {
+      "date": "2020-05-15",
+      "views": 86222,
+      "interactions": 7122,
+      "likes": 1111,
+      "comments": 231341,
+      "forwards": 23131
+    },
+    {
+      "date": "2020-05-16",
+      "views": 68222,
+      "interactions": 6722,
+      "likes": 1111,
+      "comments": 231341,
+      "forwards": 23131
+    }
+  ]
+}

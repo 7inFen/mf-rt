@@ -1,0 +1,59 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": [{
+    "workflowId": "1",
+    "status": 3,
+    "submitName": "steve",
+    "submitTime": "2020-01-12 09:11:23",
+    "quote": 110000,
+    "profitRate": 30,
+    "platforms": [{
+      "id": "1",
+      "logo": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592804517314&di=a17df7611cc8760d69133cfd99fa0376&imgtype=0&src=http%3A%2F%2F2.pic.9ht.com%2Fup%2F2018-3%2F2018327171244.jpg",
+      "count": 7,
+      "status": 3
+    },{
+      "id": "2",
+      "logo": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2716243639,1114394832&fm=26&gp=0.jpg",
+      "count": 7,
+      "status": 3
+    }]
+  },{
+    "workflowId": "2",
+    "status": 2,
+    "submitName": "amy",
+    "submitTime": "2020-01-13 09:11:23",
+    "quote": 110000,
+    "profitRate": 30,
+    "platforms": [{
+      "id": "1",
+      "logo": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592804517314&di=a17df7611cc8760d69133cfd99fa0376&imgtype=0&src=http%3A%2F%2F2.pic.9ht.com%2Fup%2F2018-3%2F2018327171244.jpg",
+      "count": 7,
+      "status": 2
+    },{
+      "id": "2",
+      "logo": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2716243639,1114394832&fm=26&gp=0.jpg",
+      "count": 4,
+      "status": 2
+    }]
+  },{
+    "workflowId": "3",
+    "status": 4,
+    "submitName": "ray",
+    "submitTime": "2020-01-14 09:11:23",
+    "quote": 110000,
+    "profitRate": 30,
+    "platforms": [{
+      "id": "1",
+      "logo": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592804517314&di=a17df7611cc8760d69133cfd99fa0376&imgtype=0&src=http%3A%2F%2F2.pic.9ht.com%2Fup%2F2018-3%2F2018327171244.jpg",
+      "count": 7,
+      "status": 4
+    },{
+      "id": "2",
+      "logo": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2716243639,1114394832&fm=26&gp=0.jpg",
+      "count": 7,
+      "status": 3
+    }]
+  }]
+}

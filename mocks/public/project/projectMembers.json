@@ -1,0 +1,35 @@
+{
+  "data": [
+    {
+      "list": [
+        {
+          "id": "011",
+          "name": "雅培组",
+          "userList": [
+            {
+              "id": "uid1",
+              "name": "小强"
+            },
+            { "id": "uid3", "name": "小强3" }
+          ],
+          "depLeader": [{ "id": "uid4", "name": "小强4" }]
+        },
+        {
+          "id": "012",
+          "name": "客户执行组",
+          "userList": [
+            {
+              "id": "uid5",
+              "name": "小强5"
+            }
+          ],
+          "depLeader": [{ "id": "uid9", "name": "小强9" }]
+        }
+      ],
+      "id": "01",
+      "name": "客户服务中心"
+    }
+  ],
+  "status": "success",
+  "msg": ""
+}

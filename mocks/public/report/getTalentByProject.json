@@ -1,0 +1,33 @@
+{
+  "status": "success",
+  "msg": "",
+  "data": {
+    "list": [
+      {
+        "talent_name": "小蝌蚪找妈妈1",
+        "talent_id": "达人id1",
+        "avatar": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+        "type": "购物车",
+        "expected_views": 310000,
+        "expected_interactions": 8922,
+        "views": 310000,
+        "interactions": 8922
+      },
+      {
+        "talent_name": "小蝌蚪找妈妈2",
+        "talent_id": "达人id2",
+        "avatar": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+        "type": "落地页",
+        "expected_views": 780020,
+        "expected_interactions": 56222,
+        "views": 780020,
+        "interactions": 56222
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "pageSize": 10,
+      "total": 110
+    }
+  }
+}

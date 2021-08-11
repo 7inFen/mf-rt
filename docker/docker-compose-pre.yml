@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  mp_mocks_ui:
+    image: 'bitnami/nginx:1.16'
+    ports:
+      - '9085:8080'
+    volumes:
+      - /home/www/mf/mp/mocks_ui:/app
+      - /home/www/mf/mp/mocks_ui/docker/confs/my_server_clock.conf:/opt/bitnami/nginx/conf/server_blocks/my_server_block.conf
