@@ -5,30 +5,12 @@
 import { history } from './configureStore'
 import axios from 'axios'
 import project from 'config/project'
-import queryString from 'query-string'
 import setApp from '../utils/setApp'
 
 const isProduction = project.env.build === 'production'
 // const BUILD_VERSION = project.version || ''
 let tick = Date.now()
 history.listen((location, action) => {
-  // location is an object like window.location
-  // 存在品牌id时，url增加品牌id参数
-  const { pathname, search } = location
-
-  const appStore = require('../store/appStore').default
-  const appState = appStore.getState()
-  const brandId = appState.auth?.brandInfo?.id || ''
-  const searchParams = queryString.parse(search)
-  if (brandId && !searchParams.b) {
-    history.replace(
-      `${pathname}?${queryString.stringify({
-        b: brandId,
-        ...searchParams,
-      })}`,
-    )
-  }
-
   // 比对版本号
   // 解决重新发版后找不到对应脚本文件问题
   // console.log(window.location)

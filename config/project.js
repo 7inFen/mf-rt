@@ -13,10 +13,10 @@ const createHistory = baseName === '/' ? createBrowserHistory : createHashHistor
 export default {
   host: 'localhost',
   port: {
-    dev: 9200,
-    mock: 9201,
-    build: 9210,
-    browserSync: 9211,
+    dev: 9300,
+    mock: 9301,
+    build: 9310,
+    browserSync: 9311,
   },
   // mock服务响应时间
   mockServerDelay: 1000,
