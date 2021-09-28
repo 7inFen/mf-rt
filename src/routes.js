@@ -5,6 +5,13 @@ import HomePage from './pages/HomePage'
 import ServerErrorPage from './pages/500'
 import PermissionDeniedPage from './pages/403'
 import NotFoundPage from './pages/404'
+
+import LoginPage from './pages/LoginPage'
+
+// ! ========== IMPORT COMPONENTS END ==========
+
+const { ROOT, ADMIN, AGENT_ADMIN, AGENT_OPERATOR, AGENT_EXECUTOR } = role
+
 export default [
   {
     // 一般情况下，首页的name恒为home
@@ -19,6 +26,25 @@ export default [
     hide: true,
     component: HomePage,
     // indexRoute: '/project/list',
+  },
+  {
+    name: 'homePage',
+    title: '笔记收录',
+    icon: '',
+    path: '/home',
+    auth: [ROOT, ADMIN, AGENT_ADMIN, AGENT_OPERATOR, AGENT_EXECUTOR],
+    exact: true,
+    component: HomePage,
+  },
+  {
+    name: 'login',
+    title: '登录',
+    icon: '',
+    path: '/login',
+    component: LoginPage,
+    hide: true,
+    exact: true,
+    layout: [false],
   },
   {
     name: '_500',

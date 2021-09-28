@@ -1,85 +1,65 @@
-// import './styles.css'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import React from 'react'
-import { G2, Chart, Tooltip, Interval } from 'bizcharts'
-import styled from 'styled-components'
+import PropTypes from 'prop-types'
+import Init from './Init'
+import LayoutHOC from './Layouts/LayoutHOC'
+import {
+  userIsAuthenticated,
+  redirectToVerificationPage,
+  roleRedirectFromHome,
+  redirectToAccountAuditingInfoPage,
+} from '../store/auth'
+import Immutable from 'immutable'
 
-const StyledApp = styled.div`
-  padding: 20px;
-  h2 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-`
+// This is a class-based component because the current
+// version of hot reloading won't hot reload a stateless
+// component at the top-level.
+// const routes = []
+const routeList = []
 
-const data = [
-  { name: '菁挚', 月份: '菁挚', 月均降雨量: 2991 },
-  { name: '菁挚', 月份: '菁挚蓝罐', 月均降雨量: 753 },
-  { name: '菁挚', 月份: '脐带血营养群', 月均降雨量: 307 },
-  { name: '菁挚', 月份: '叶黄素', 月均降雨量: 704 },
-  { name: '菁挚', 月份: 'DHA', 月均降雨量: 2584 },
-  { name: '菁挚', 月份: 'RRR', 月均降雨量: 1671 },
-  { name: '菁挚', 月份: '眼脑发育', 月均降雨量: 23 },
-  { name: '菁挚', 月份: '感知力', 月均降雨量: 147 },
-  { name: '菁挚', 月份: '宝宝奶粉', 月均降雨量: 173 },
+const parseRouteList = (list = []) => {
+  list.forEach((route, routeIdx) => {
+    const { indexRoute, name } = route
+    if (indexRoute) {
+      routeList.push(<Redirect exact key={`indexRoute_${name}`} from={route.path} to={route.indexRoute} />)
+    } else {
+      let component = route.component
+      if (route.auth) {
+        // 权限标记，登录状态校验
+        component = userIsAuthenticated(component)
 
-  { name: '菁挚蓝罐', 月份: '菁挚', 月均降雨量: 2316 },
-  { name: '菁挚蓝罐', 月份: '菁挚蓝罐', 月均降雨量: 1292 },
-  { name: '菁挚蓝罐', 月份: '脐带血营养群', 月均降雨量: 394 },
-  { name: '菁挚蓝罐', 月份: '叶黄素', 月均降雨量: 1052 },
-  { name: '菁挚蓝罐', 月份: 'DHA', 月均降雨量: 2552 },
-  { name: '菁挚蓝罐', 月份: 'RRR', 月均降雨量: 2114 },
-  { name: '菁挚蓝罐', 月份: '眼脑发育', 月均降雨量: 36 },
-  { name: '菁挚蓝罐', 月份: '感知力', 月均降雨量: 224 },
-  { name: '菁挚蓝罐', 月份: '宝宝奶粉', 月均降雨量: 149 },
+        component = redirectToVerificationPage(component)
 
-  { name: '脐带血营养群', 月份: '菁挚', 月均降雨量: 3678 },
-  { name: '脐带血营养群', 月份: '菁挚蓝罐', 月均降雨量: 2194 },
-  { name: '脐带血营养群', 月份: '脐带血营养群', 月均降雨量: 1179 },
-  { name: '脐带血营养群', 月份: '叶黄素', 月均降雨量: 1790 },
-  { name: '脐带血营养群', 月份: 'DHA', 月均降雨量: 3642 },
-  { name: '脐带血营养群', 月份: 'RRR', 月均降雨量: 2695 },
-  { name: '脐带血营养群', 月份: '眼脑发育', 月均降雨量: 67 },
-  { name: '脐带血营养群', 月份: '感知力', 月均降雨量: 217 },
-  { name: '脐带血营养群', 月份: '宝宝奶粉', 月均降雨量: 244 },
+        component = redirectToAccountAuditingInfoPage(component)
 
-  { name: '眼脑发育', 月份: '菁挚', 月均降雨量: 92 },
-  { name: '眼脑发育', 月份: '菁挚蓝罐', 月均降雨量: 68 },
-  { name: '眼脑发育', 月份: '脐带血营养群', 月均降雨量: 49 },
-  { name: '眼脑发育', 月份: '叶黄素', 月均降雨量: 201 },
-  { name: '眼脑发育', 月份: 'DHA', 月均降雨量: 1556 },
-  { name: '眼脑发育', 月份: 'RRR', 月均降雨量: 66 },
-  { name: '眼脑发育', 月份: '眼脑发育', 月均降雨量: 334 },
-  { name: '眼脑发育', 月份: '感知力', 月均降雨量: 18 },
-  { name: '眼脑发育', 月份: '宝宝奶粉', 月均降雨量: 26 },
-
-  { name: '感知力', 月份: '菁挚', 月均降雨量: 42 },
-  { name: '感知力', 月份: '菁挚蓝罐', 月均降雨量: 29 },
-  { name: '感知力', 月份: '脐带血营养群', 月均降雨量: 5 },
-  { name: '感知力', 月份: '叶黄素', 月均降雨量: 24 },
-  { name: '感知力', 月份: 'DHA', 月均降雨量: 57 },
-  { name: '感知力', 月份: 'RRR', 月均降雨量: 62 },
-  { name: '感知力', 月份: '眼脑发育', 月均降雨量: 10 },
-  { name: '感知力', 月份: '感知力', 月均降雨量: 1183 },
-  { name: '感知力', 月份: '宝宝奶粉', 月均降雨量: 2 },
-]
-
-export default function App() {
-  return (
-    <StyledApp className="App">
-      <h2>关键词搜索结果文章中含有关键字对比</h2>
-      <Chart height={500} padding="auto" data={data} autoFit>
-        <Interval
-          adjust={[
-            {
-              type: 'dodge',
-              marginRatio: 0,
-            },
-          ]}
-          color="name"
-          position="月份*月均降雨量"
-        />
-        <Tooltip shared />
-      </Chart>
-    </StyledApp>
-  )
+        // 最后执行首页跳转
+        // 首页跳转校验
+        if (route.name === 'home') {
+          component = roleRedirectFromHome(component)
+        }
+      }
+      routeList.push(
+        <Route
+          key={`${route.name}_${routeIdx}` || `route_menu-${Math.ceil(Math.random() * 10e10)}`}
+          exact={!!route.exact}
+          path={route.path}
+          component={component}
+        />,
+      )
+    }
+    if (route.children && route.children.length) {
+      parseRouteList(route.children)
+    }
+  })
+  return routeList
 }
+
+const App = ({ routes }) => {
+  return <Switch>{parseRouteList(Immutable.List(routes).toArray())}</Switch>
+}
+
+App.propTypes = {
+  routes: PropTypes.array,
+}
+
+export default Init()(LayoutHOC(App))

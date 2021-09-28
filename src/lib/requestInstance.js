@@ -98,22 +98,22 @@ requestInstance.interceptors.request.use(
     // console.log(config);
     const { account, brandInfo } = appState?.auth || {}
     const auth = account?.auth || null
-    const brandId = brandInfo?.id
-      ? {
-          b: brandInfo.id,
-        }
-      : {}
-    if (config.method === 'get') {
-      config.params = populateParams({
-        ...brandId,
-        ...config.params,
-      })
-    } else if (config.method === 'post') {
-      config.data = populateParams({
-        ...brandId,
-        ...config.data,
-      })
-    }
+    // const brandId = brandInfo?.id
+    //   ? {
+    //       b: brandInfo.id,
+    //     }
+    //   : {}
+    // if (config.method === 'get') {
+    //   config.params = populateParams({
+    //     ...brandId,
+    //     ...config.params,
+    //   })
+    // } else if (config.method === 'post') {
+    //   config.data = populateParams({
+    //     ...brandId,
+    //     ...config.data,
+    //   })
+    // }
     // console.log(config)
     // 使用yapi接口
     // console.log(process.env.RUNTIME_ENV, process.env.NODE_ENV)

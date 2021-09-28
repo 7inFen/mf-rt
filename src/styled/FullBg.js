@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import bg from '../assets/bg/signup.jpg'
+import bg from '../assets/bg/login.jpg'
 // import bg from '../assets/bg/signupBase64'
 import logo from '../assets/logo/mf-white.png'
 

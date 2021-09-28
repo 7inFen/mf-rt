@@ -1,7 +1,7 @@
 // import favicon from '../src/assets/logo/logo_small.png'
 // import logo from '../src/assets/logo/black.png'
 
-const name = '米赋OA系统'
+const name = '小红书数据系统'
 export default {
   name,
   // favicon,
@@ -11,6 +11,6 @@ export default {
   recordNumber: '沪ICP备18022023号',
   // title: 'MediaFull Ad Server',
   keywords: 'kol,advertisement,mdfull,oa',
-  description: '米赋OA系统',
+  description: '小红书数据系统',
   author: 'mdfull',
 }

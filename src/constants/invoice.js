@@ -1,1 +1,0 @@
-export const FETCH_INVOICE_LIST = 'FETCH_INVOICE_LIST'

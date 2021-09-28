@@ -26,6 +26,14 @@ export const redirectToHome = connectedRouterRedirect({
   AuthenticatingComponent: Loading,
 })
 
+export const routeAccess = (account = {}, route = {}) => {
+  const { account_type } = account
+  const { auth: roleList = [] } = route
+
+  // 符合route auth || accessUser || accessDepartment限定
+  return roleList.includes(account_type)
+}
+
 // 其它页面，是否跳到账号验证页面
 export const redirectToVerificationPage = connectedRouterRedirect({
   redirectPath: (state) => `https://oa.mdfull.com/verification-account?phone=${state?.auth?.account?.phone || ''}`,
