@@ -46,7 +46,6 @@ export default {
       },
     },
   },
-
   iconFont: '',
   // 设计稿宽度，为0时不转换为vw
   viewportWidth: 0,

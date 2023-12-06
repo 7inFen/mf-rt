@@ -23,18 +23,5 @@ export default {
       accountInfo: 'home/get-user-info',
       changePassword: 'home/change-password',
     },
-    抖音: {
-      筛选数据: '~/dy/filterData',
-      导入: '~/dy/import',
-      列表: '~/dy/list',
-      修改联系方式: '~/dy/updateContact',
-      修改米赋标签: '~/dy/updateMfTag',
-      修改米赋政策: '~/dy/updateMfPolicy',
-      修改特殊权益: '~/dy/updateBenefit',
-      增加特殊权益: '~/dy/addBenefit',
-      删除特殊权益: '~/dy/deleteBenefit',
-      添加到选号车: '~/dy/addCart',
-      从选号车移除: '~/dy/deleteCart',
-    },
   },
 }

@@ -2,88 +2,162 @@
 
 ```
 .
-├── api
-│   ├── apiList.js     # 导出apiList
-│   ├── index.js       # 根据运行环境RUNTIME_ENV选择使用下列哪个接口配置，详见环境配置
-│   ├── dev.js         # 前端接口配置，配合npm run start启动，npm run build:static打包
-│   ├── predev.js      # 后端接口配置，配合npm run start:dev启动，npm run build:dev打包
-│   └── prod.js        # 线上接口配置，无启动配置，npm run build打包
+├── CONTRIBUTING.md
+├── CONTRIBUTORS.md
+├── LICENSE
+├── PULL_REQUEST_TEMPLATE.md
+├── README.md
+├── TODO.md
+├── api               # API接口约定目录
+│   ├── dev.js        # 前端接口配置，配合npm run start启动，npm run build:static打包
+│   ├── index.js
+│   ├── predev.js     # 后端接口配置，配合npm run start:dev启动，npm run build:dev打包
+│   └── prod.js       # 线上接口配置，无启动配置，npm run build打包
+├── appveyor.yml
 ├── config
-│   ├── auth.js        # 系统内所有权限集合
-│   ├── project.js     # 项目配置
-│   └── site.js        # 网站配置
-├── dist
-│   └── version.json   # 打包时自动生成，用于版本更新后强刷新用户ui
+│   ├── auth.js       # 后端权限映射文件
+│   ├── project.js    # 项目配置，修改启动端口等
+│   ├── role.js       # 角色预设文件，配合src/routes.js做路由权限配置
+│   └── site.js       # 网站信息配置
 ├── docker
 ├── docs
-├── mocks
-│   ├── json-server.mjs  # json server配置文件
-│   └── public          # mocks数据配置，对应api/dev.js
-├── package-lock.json
-├── package.json
+├── mocks                    # 使用YApi后，本地mocks暂停使用
+│   ├── json-server.mjs      # json server配置文件
+│   └── public               # mocks数据配置，对应api/dev.js中的json文件接口
+├── node_scripts             # 开发环境使用的node脚本
+├── package-lock.json        # 项目package版本锁定文件
+├── package.json             # 项目package
+├── postcss.config.js        # postcss配置文件
 ├── src
-│   ├── actions         # redux action
-│   ├── assets          # assets
-│   ├── components
-│   │   ├── App.js      # 路由渲染
-│   │   ├── Init.js     # 初始化处理
-│   │   ├── Layouts     # ui布局
-│   │   ├── Loading     # 全局loading效果
-│   │   └── Root.js     # 主题、配置等注入
-│   ├── constants       # redux constants
-│   ├── index.ejs       # index.html模版文件
-│   ├── index.js        # 项目入口
+│   ├── actions              # redux actions
+│   │   ├── auth.js          # 用户信息
+│   │   ├── config.js        # 系统配置
+│   │   ├── home.js          # home页面
+│   │   ├── init.js          # 系统初始化
+│   │   └── organization.js  # 组织结构
+│   ├── assets               # 图片等
+│   │   ├── bg               # 登录页背景
+│   │   ├── icon             # 常用icon
+│   │   ├── level            # 等级icon
+│   │   ├── logo             # 平台、媒体logo
+│   │   └── menu             # 菜单icon配置
+│   ├── components           # 公共组件
+│   │   ├── App.js           # 路由渲染
+│   │   ├── Bar.js           # 标题栏
+│   │   ├── BtnLink.js       # 按钮链接
+│   │   ├── ColorText.js     # 对大于或小于指定比例的文本变色
+│   │   ├── Copy.tsx         # 复制
+│   │   ├── CustomIcon.js    # 自定义icon
+│   │   ├── FilterRow.js     # 筛选
+│   │   ├── Gender.js        # 性别
+│   │   ├── Init.js          # 初始化处理
+│   │   ├── Layouts          # ui布局
+│   │   ├── LeftRight.js     # 文本左右布局组件
+│   │   ├── Link.js          # 跳转链接
+│   │   ├── Loading          # Loading组件
+│   │   ├── MixMultipleSelect.js    # 可混选Select
+│   │   ├── Modal.js                # 弹窗
+│   │   ├── ModalForm.js            # 表单弹窗
+│   │   ├── Placeholder             # 占位组件
+│   │   ├── Root.js                 # 主题、配置等注入
+│   │   ├── Search.js               # 搜索组件
+│   │   ├── SearchFilter.js         # 可搜索远程数据的Select
+│   │   ├── Table.js                # 表格组件
+│   │   ├── TableColumnFilter.js    # 表格列过滤
+│   │   ├── TagSelect.js            # Tag选择器
+│   │   ├── TooltipQuestion.js      # Tooltip组件
+│   │   ├── Tp.js                   # 可截断指定文本行数的组件
+│   │   ├── Upload                  # 上传组件
+│   │   ├── UserPop                 # 站点右上角用户信息
+│   │   ├── antd                    # 重写antd组件
+│   │   ├── auth                    # 权限控制高阶组件
+│   │   └── preview                 # 预览组件
+│   ├── constants                   # redux constants
+│   ├── hooks
+│   │   ├── useApp.ts               # antd useApp
+│   │   ├── useFIxedColumn.js       # 缓存表格列固定
+│   │   ├── useKeyPress.js          # 按键监听
+│   │   └── useSystemUserList.js    # 拉取系统用户列表
+│   ├── index.ejs                   # 输出index.html
+│   ├── index.js                    # js入口
 │   ├── lib
-│   │   ├── delay.js            # 延时，Root.js使用
-│   │   ├── handleError.js      # request error 处理
-│   │   ├── request.js          # 请求封装
-│   │   └── requestInstance.js  # axios请求实例
-│   ├── pages                   # 页面入口
-│   ├── reducers                # redux reducer
-│   ├── routes.js               # 路由配置
+│   │   ├── delay.js                # js delay
+│   │   ├── download.ts             # 文件下载处理
+│   │   ├── handleError.js          # 请求错误处理
+│   │   ├── request.js              # 请求处理
+│   │   └── requestInstance.js      # 请求实例配置
+│   ├── pages                       # 页面文件
+│   │   ├── 403.js
+│   │   ├── 404.js
+│   │   ├── 500.js
+│   │   ├── HomePage.js
+│   │   └── LoginPage.js
+│   ├── reducers                    # redux reducer
+│   ├── routes.js                   # 路由配置
 │   ├── store
-│   │   ├── appStore.js         # 导出全局可用的appStore
-│   │   ├── auth.js             # 权限表现处理
-│   │   ├── configureStore.js   # redux configureStore
-│   │   └── history.js          # 导出全局可用的history
-│   ├── styled                  # styled-components组件
-│   ├── theme                   # 全局主题设置
-│   │   ├── index.js            # 可通过styled-components取到
-│   │   └── index.less          # antd主题覆盖
-│   ├── types
+│   │   ├── appStore.js             # 导出全局可用的appStore
+│   │   ├── auth.js                 # 权限表现处理
+│   │   ├── configureStore.js       # redux configureStore
+│   │   └── history.js              # 导出全局可用的history
+│   ├── styled                      # styled-components组件
+│   ├── styles                      # 项目样式一般使用styled-components配置，不使用css文件
+│   ├── theme                       # 全局主题设置
+│   ├── types                       # TypeScript types
 │   ├── utils
-│   │   ├── download.js         # 文件下载的处理
-│   ├── version.json            # 打包时生成的版本信息，会自动拷贝到dist目录
+│   │   ├── debounce.js             # 防抖和节流
+│   │   ├── getApiFullPath.js       # 取API真实路径
+│   │   ├── getStrWidth.js          # 计算字符宽度
+│   │   ├── getUploadFiles.js       # 取上传后的文件列表
+│   │   ├── gradientColors.js       # 生成渐变色
+│   │   ├── isIE.js                 # 检查是否IE浏览器
+│   │   ├── log.js                  # console.log格式化
+│   │   ├── mapKeys.js              # List -> Map
+│   │   ├── message.js              # postMessage, 消息跨Tab页处理
+│   │   ├── np.js                   # NP数学计算
+│   │   ├── parseNumber.js          # 数字格式化
+│   │   ├── parsePost.js            # post字段处理
+│   │   ├── parseTime.js            # 时间格式化
+│   │   ├── pattern.js              # 常用正则
+│   │   ├── quickSort.js            # 快速排序
+│   │   ├── react-to-print.tsx      # 打印处理
+│   │   ├── reverseModalConfirmBtn.js    # 交换Modal确认弹窗按钮位置
+│   │   ├── setApp.js                    # 全局变量注入
+│   │   ├── setCss.js                    # 全局CSS注入
+│   │   ├── setJs.js                     # 全局脚本注入
+│   │   ├── styled-px2vw.js              # 将css单位px->vw
+│   │   ├── timeGreetings.js             # 欢迎语配置
+│   │   └── unique.js                    # 去重
 │   └── webpack-public-path.js
-├── tools
-│   ├── analyzeBundle.js
+├── tools                           # 开发环境配置工具
+│   ├── analyzeBundle.js            # 打包分析
 │   ├── assetsTransformer.js
-│   ├── build.js                # NODE_ENV=production
+│   ├── build.js                    # NODE_ENV=production
 │   ├── chalkConfig.js
-│   ├── distServer.js
+│   ├── distServer.js               # RUNTIME_ENV=development, NODE_ENV=production; 使用api/dev.js
 │   ├── enzymeTestAdapterSetup.js
 │   ├── fileMock.js
+│   ├── getRepoInfo.js              # 生成git信息
 │   ├── nodeVersionCheck.js
-│   ├── preServer.js            # RUNTIME_ENV=predev, NODE_ENV=development; 使用api/predev.js
+│   ├── preServer.js                # RUNTIME_ENV=predev, NODE_ENV=development; 使用api/predev.js
 │   ├── removeDemo.js
-│   ├── srcServer.js            # RUNTIME_ENV=development, NODE_ENV=development; 使用api/dev.js
+│   ├── srcServer.js                # RUNTIME_ENV=development, NODE_ENV=development; 使用api/dev.js
 │   ├── startMessage.js
-│   ├── updateEnvFile.js        # 更新RUNTIME_ENV
-│   ├── updateRoutes.js         # NODE_ENV=production时更新routes.js中路由为分包写法
+│   ├── updateEnvFile.js            # 更新RUNTIME_ENV
+│   ├── updateRoutes.js             # 更新routes.js中路由引入写法
 │   └── webpackPlugins
-│       ├── sassVarsToLess.js   # sass转less插件
-│       └── setVersion.js       # 写版本插件
-├── tsconfig.json
-├── webpack.config.dev.js       # NODE_ENV=development
-└── webpack.config.prod.js      # NODE_ENV=production
+│       ├── sassVarsToLess.js
+│       └── setVersion.js           # 写版本插件
+├── tsconfig.json                   # TypeScript配置
+├── webpack.config.dev.js           # NODE_ENV=development
+└── webpack.config.prod.js          # NODE_ENV=production
 ```
 
 # 环境配置
 
-## 安装  
+## 安装
+`npm install`  
+`npm run _install`  
 `npm install --legacy-peer-deps`  
-或  
-`npm run _install`
 
 ## 开发环境
 
