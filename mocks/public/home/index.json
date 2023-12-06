@@ -1,0 +1,21 @@
+{
+  "data": {
+    "list": [
+      {
+        "id": 1,
+        "text": "row 1"
+      },
+      {
+        "id": 2,
+        "text": "row 2"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "pageSize": 10,
+      "total": 66
+    }
+  },
+  "msg": "",
+  "status": "success"
+}

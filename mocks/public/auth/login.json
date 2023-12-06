@@ -1,0 +1,7 @@
+{
+  "status": "success",
+  "msg": "账号或密码错误",
+  "data": {
+    "auth": "eyJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjQsIm5hbWUiOiLlsLnkvbPlkJsiLCJtb2JpbGUiOiIxMzgxNjkzNDUwMSIsInBpZCI6MCwiZXhwIjoxNjkyMzUzNjk1LCJlbWFpbCI6Imp1bmp1bi55aW5AbWVkaWFmdWxsLmNuIn0.h-oB-hypkiXvsheokAFm_oNj-x2DgoaTMvkFyftZCW0"
+  }
+}
