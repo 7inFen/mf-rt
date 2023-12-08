@@ -25,5 +25,8 @@ export default {
       accountInfo: '~/common/accountInfo',
       changePassword: '~/common/common?api=auth.changePassword',
     },
+    项目: {
+      列表: '~/project/list',
+    },
   },
 }

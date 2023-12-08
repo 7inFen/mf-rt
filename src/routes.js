@@ -7,6 +7,9 @@ import PermissionDeniedPage from './pages/403'
 import NotFoundPage from './pages/404'
 import LoginPage from './pages/LoginPage'
 
+// 项目
+import ProjectPage from './pages/project'
+
 // ! ========== IMPORT COMPONENTS END ==========
 
 const { ROOT, ADMIN, AGENT_ADMIN, AGENT_OPERATOR, AGENT_EXECUTOR } = role
@@ -34,6 +37,15 @@ export default [
     auth: true,
     exact: true,
     component: HomePage,
+  },
+  {
+    name: 'project',
+    title: '项目',
+    icon: '',
+    path: '/project',
+    auth: true,
+    exact: true,
+    component: ProjectPage,
   },
   {
     name: 'login',
