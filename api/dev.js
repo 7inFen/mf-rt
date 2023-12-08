@@ -6,7 +6,7 @@
  */
 import project from '../config/project'
 
-const { host, port } = project
+const { host, port, YApi } = project
 
 let BASE_URL = `http://${host}:${port.mock}/`
 if (process.env.NODE_ENV === 'production') {
@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 export default {
   apiBaseUrl: BASE_URL,
-  yApiBaseUrl: 'http://61.174.52.49:9400/mock/254/',
+  yApiBaseUrl: YApi.baseUrl,
   uploadFile: 'https://testkolapi.mdfull.com/file/add', // 上传
   downloadFile: '',
   tokenName: 'vra-token',

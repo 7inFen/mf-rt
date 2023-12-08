@@ -4,10 +4,14 @@
  * apiList子key的值为对象集合
  * 且请求路径中不能有小数点
  */
+import project from '../config/project'
+
+const { YApi } = project
 
 const BASE_URL = 'http://kolapi.mdfull.com'
 export default {
   apiBaseUrl: BASE_URL,
+  yApiBaseUrl: YApi.baseUrl,
   uploadFile: `${BASE_URL}/file/add`, // 上传
   downloadFile: '',
   tokenName: 'vra-token',
