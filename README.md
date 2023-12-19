@@ -1,6 +1,8 @@
-# 目录结构
+# README
 
-```
+## 目录结构
+
+```bash
 .
 ├── CONTRIBUTING.md
 ├── CONTRIBUTORS.md
@@ -152,66 +154,93 @@
 └── webpack.config.prod.js          # NODE_ENV=production
 ```
 
-# 环境配置
+## 环境配置
 
-## 安装
-`npm install`  
-`npm run _install`  
-`npm install --legacy-peer-deps`  
+### 安装
 
-## 开发环境
+```bash
+npm install
+或
+npm run _install
+或
+npm install --legacy-peer-deps
+```
+
+### 开发环境
 
 `RUNTIME_ENV`确定接口运行环境`api/index.js`（前端、后端、线上），`NODE_ENV`确定 App 模式（开发、生产）。由`package.json`中`script`参数传入，通过`tools`下的启动入口处理。
 
 - `npm run start`
-  ```
+  
+  > 启动`api/dev`接口配置的UI
+  
+  ```bash
   RUNTIME_ENV=development
   NODE_ENV=development
   ```
+
 - `npm run start:dev`
-  ```
+  
+  > 启动`api/predev`接口配置的UI
+  
+  ```bash
   RUNTIME_ENV=predev
   NODE_ENV=development
   ```
 
-## 打包环境
+### 打包环境
 
 - `npm run build:static`
-  ```
+  
+  > 生成`api/dev`接口配置的UI dist
+  
+  ```bash
   RUNTIME_ENV=development
   NODE_ENV=production
   ```
+
 - `npm run build:dev`
-  ```
+  
+  > 生成`api/predev`接口配置的UI dist
+  
+  ```bash
   RUNTIME_ENV=predev
   NODE_ENV=production
   ```
+
 - `npm run build`
-  ```
+  
+  > 生成`api/prod`接口配置的UI dist
+  
+  ```bash
   RUNTIME_ENV=production
   NODE_ENV=production
   ```
 
-# 权限和路由管理
+## 权限和路由管理
 
-## 权限
+### 权限
 
 `config/auth.js`中定义系统全部权限集合，具体权限的值由后端定义。  
 在 App 初始化时取到用户拥有的所有权限并渲染路由。因此路由文件的 auth 的值与该文件的值一一对应。  
 页面中按钮等控件的可操作权限在 components/auth 中处理。
 
-## 路由
+### 路由
 
 路由配置在`src/routes.js`文件  
 其中，auth 为 false 或空不校验权限；auth 是 true 表示仅校验是否登录；如果是字符串或其他值，除了会校验是否登录，还会校验是否有这个值代表的权限。
 因热更新与`loadable`冲突，`NODE_ENV=production`时，会重写`routes.js`文件以支持`loadable`，因此请在 `IMPORT COMPONENTS BEGIN`和`IMPORT COMPONENTS END`之间引入组件，也不要删除或修改该注释。
 
-# 发版与更新
+## 发版与更新
 
-`src/store/history.js, tools/webpackPlugins/setVersion.js`  
+```bash
+src/store/history.js, 
+tools/webpackPlugins/setVersion.js
+```
+
 项目打包时，将当前开始打包的时间戳作为版本号写入`version.json`文件，前端路由切换会请求这个文件的版本信息，比对不一致后强刷当前页面重新获取资源。
 
-# 以下依赖暂时不建议升级
+## 以下依赖暂时不建议升级
 
 - dependencies
 
@@ -221,3 +250,7 @@
 - devDependencies
 
 1. chalk@4
+
+## 其它
+
+- 启动项目后终端出现`Error: Cannot find module 'browser-sync-client/dist/index.min.js'`的问题时，将`node_modules/browser-sync-client/dist/index.js`文件重命名为`index.min.js`  
