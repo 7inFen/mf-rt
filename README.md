@@ -170,7 +170,7 @@ npm install --legacy-peer-deps
 
 `RUNTIME_ENV`确定接口运行环境`api/index.js`（前端、后端、线上），`NODE_ENV`确定 App 模式（开发、生产）。由`package.json`中`script`参数传入，通过`tools`下的启动入口处理。
 
-- `npm run start`
+- `npm run start`（使用mock数据开发）
   
   > 启动`api/dev`接口配置的UI
   
@@ -179,7 +179,7 @@ npm install --legacy-peer-deps
   NODE_ENV=development
   ```
 
-- `npm run start:dev`
+- `npm run start:dev`（使用预发布或线上数据开发）
   
   > 启动`api/predev`接口配置的UI
   
@@ -199,7 +199,7 @@ npm install --legacy-peer-deps
   NODE_ENV=production
   ```
 
-- `npm run build:dev`
+- `npm run build:dev`（常用）
   
   > 生成`api/predev`接口配置的UI dist
   
@@ -216,6 +216,9 @@ npm install --legacy-peer-deps
   RUNTIME_ENV=production
   NODE_ENV=production
   ```
+
+- `npm run build pre|dev`（常用）: 使用`config/project.api.pre`作为`baseUrl`，使用`api/predev`中定义的接口生成UI dist
+- `npm run build prod`（常用）: 使用`config/project.api.prod`作为`baseUrl`，使用`api/predev`中定义的接口生成UI dist
 
 ## 权限和路由管理
 

@@ -28,7 +28,7 @@
     "clean-dist": "npm run remove-dist && mkdir dist",
     "build:static": "npm run clean-dist && babel-node tools/build.js --development && npm run open:dist",
     "build:dev": "npm run clean-dist && babel-node tools/build.js --predev",
-    "build": "npm run clean-dist && babel-node tools/build.js --production",
+    "build": "npm run clean-dist && babel-node tools/build.js",
     "test": "jest",
     "test:CI": "jest",
     "test:cover": "npm run test -- --coverage ",

@@ -20,8 +20,12 @@ export default {
     browserSync: 9411,
     mock: 12234, // 需要在json-server.mjs同步修改
   },
+  api: {
+    pre: 'https://testkolapi.mdfull.com',
+    prod: 'https://kolapi.mdfull.com',
+  },
   YApi: {
-    baseUrl: 'http://61.174.52.49:9400/mock/257/'
+    baseUrl: 'http://61.174.52.49:9400/mock/257/',
   },
   history: {
     type: createHistory.name,
